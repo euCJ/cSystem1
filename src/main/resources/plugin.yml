@@ -1,0 +1,74 @@
+name: cUtility
+version: '${project.version}'
+main: me.imcj.cutility.CUtility
+description: 'A practical, secure and friendly system plugin'
+website: 'https://return-3.gitbook.io/cchat/'
+load: STARTUP
+api-version: 1.19
+authors: [ImCJ_]
+libraries:
+  - org.jetbrains.kotlin:kotlin-stdlib:1.8.10
+commands:
+  helloword:
+    description: Utilizado para dar sorte
+    usage: /helloword
+  cores:
+    description: Utilize para ver as cores possivei no minecraft
+    usage: /cores
+  sudo:
+    description: Utilize para dar um comando por outro jogador
+    usage: /sudo
+    permissions: c.utils.sudo
+  invsee:
+    description: Utilize para ver o inventario de um jogador
+    usage: /invsee
+    permissions: c.utils.invsee
+  luz:
+    description: Utilize para iluminar o servidor
+    usage: /luz
+    permissions: c.utils.luz
+  light:
+    description: Utilize para iluminar o servidor
+    usage: /light
+    permissions: c.utils.luz
+  fly:
+    description: Utilize para sobrevoar sem gamemode
+    usage: /fly
+    permissions: c.utils.voar
+  voar:
+    description: Utilize para sobrevoar sem gamemode
+    usage: /voar
+    permissions: c.utils.voar
+  ping:
+    description: Veja sua latencia no servidor
+    usage: /ping
+    permissions: minecraft.command.playSound
+  vanish:
+    description: Faça o jogador invisivel para outros.
+    usage: /vanish
+  vanish ver:
+    description: lista de jogadores invisiveis.
+    usage: /vanish ver
+    permissions: c.utils.vanish
+  chapeu:
+    permission: c.utils.chapeu
+    description: Permite que o jogador execute o comando /chapeu.
+    default: true
+  bigorna:
+    permissions: c.utils.workbench
+    description: Permite que o jogador use os comandos /craft, /bigorna e /ender.
+    default: true
+  craft:
+    permissions: c.utils.workbench
+    description: Permite que o jogador use os comandos /craft, /bigorna e /ender.
+    default: true
+  echest:
+    permissions: c.utils.workbench
+    description: Permite que o jogador use os comandos /craft, /bigorna e /ender.
+    default: true
+  cutils:
+    usage: /cutils <subcommand>
+    description: Comandos úteis do Custom Utils plugin
+    aliases: [ ajuda ]
+  reload:
+    description: Recarrega a configuração do plugin
